@@ -46,6 +46,7 @@ http://paullab.synology.me:5000/ 에서 5000이 port(문)
 
 ----------
 
+
 ## 2. GitHub
 
 
@@ -79,7 +80,9 @@ http://paullab.synology.me:5000/ 에서 5000이 port(문)
 
 - clear : Git Bash에 작성된 내용을 지워줌 (단, 초기화는 아님)
 
+
 ---------------
+
 
 ## 3. 핵심적인 HTML 문법 요약집
 
@@ -113,7 +116,7 @@ http://paullab.synology.me:5000/ 에서 5000이 port(문)
     
 -   lorem*3: 문장 3줄 생성
 
-
+----------------------
 
 ## 4. 자주 사용하는 VSC 단축키
 
