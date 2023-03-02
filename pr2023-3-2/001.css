@@ -1,0 +1,13 @@
+div {	color: sandybrown;}
+p {	
+	border: 1px solid currentColor;
+    font-family: 'Pretendard-Regular', Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+  }
+
+
