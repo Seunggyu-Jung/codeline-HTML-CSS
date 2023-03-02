@@ -38,5 +38,9 @@ $ git commit -m "메시지"
 <!-- #2022.02.20 업데이트 -->
 ```
 
+<br>
+
+- 마크업 오류를 예방하기 위한 사이트 숙지 할 것: [Validation](https://validator.w3.org/)
+
 
 
