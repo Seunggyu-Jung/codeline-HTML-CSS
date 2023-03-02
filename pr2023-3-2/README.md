@@ -169,6 +169,33 @@ $ git commit -m "메시지"
 </figure>
 ```
 
+<br> 
+
+- `<strong>` : 기본적으로 굵은 글씨, 스크린 리더를 사용할때 강조된 어조로 말하게 만듦, 적극 권장
+```
+<strong>아! 화장실!!</strong>
+```
+
+<br>
+
+- q 태그 : 출처 + 짧은 인용문을 나타냄
+```
+<q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">
+		I'm sorry, Dave. I'm afraid I can't do that.
+	</q>
+```
+
+<br>
+
+
+- blockquote 태그 : 긴 인용문을 나타냄
+
+- cite 태그 : 저작물의 출처를 표기, 제목이 반드시 들어가야 함
+
+```
+<cite>— 어린왕자 여우의 말 중</cite>
+```
+
 
 
 
