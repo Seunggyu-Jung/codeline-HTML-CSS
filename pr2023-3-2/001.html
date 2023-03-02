@@ -6,21 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--name:문서 레벨 데이터, 데이터 이름 알려줌 / content: 데이터 내용 설명-->
     <title>Document</title> <!--title: 간결하게 텍스트만 포함, 적당한 제목으로 설정, 60자를 넘지 않아야 함-->
     <link rel="stylesheet" href="001.css"> <!--rel: relations 관계. 대상 파일의 속성을 나타냄, href :  hyper-references 경로. 연결 시 참조할 파일의 위치를 나타냄  --> 
-    <style>
-        html {
+    <style> 
+        html {                  
             font-size: 1rem;
         }
-
-       
-    </style>
+    </style> <!--HTML내에서 스타일에 영향을 줌-->
 </head>
-<body>
-    <div>
-        <p>hello</p>
-    </div>
-    
+<body>   <!--HTML의 내용을 담당(각종 정보나 동작을 담고 있음)-->
 
-    
+    <figure role="img" aria-labelledby="caption">
+        <pre>
+        ⊂_ヽ
+          ＼＼  Λ＿Λ
+           ＼( ‘ㅅ’ ) 두둠칫
+            >　⌒ヽ
+           / 　 へ＼
+           /　　/　＼＼
+           ﾚ　ノ　　 ヽ_つ
+          /　/두둠칫
+          /　/|
+         (　(ヽ
+         |　|、＼
+         | 丿 ＼ ⌒)
+         | |　　) /
+        `ノ )　　Lﾉ
+        </pre>
+        <figcaption id="caption">
+          토끼 인간이 두둠칫 두둠칫 동작을 하고 있습니다.
+        </figcaption>
+      </figure>
+
 </body>
 </html>
 
