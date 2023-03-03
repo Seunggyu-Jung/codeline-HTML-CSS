@@ -81,7 +81,7 @@ $ git commit -m "메시지"
 <br>
 
 
-3. HTML의 핵심 태그(텍스트 태그)
+## 4. Tags related to Texts(HTML)
 
 - `<h1>` : Heading 태그, 제목 태그 -> 목차이기에, 사용자가 정보를 수월하게 가져갈 수 있게 함으로 중요함, *h1 ~ h6 순서대로 작성할 것*
 
@@ -178,7 +178,7 @@ $ git commit -m "메시지"
 
 <br>
 
-- q 태그 : 출처 + 짧은 인용문을 나타냄
+- `<q>` : 출처 + 짧은 인용문을 나타냄
 ```
 <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">
 		I'm sorry, Dave. I'm afraid I can't do that.
@@ -188,13 +188,92 @@ $ git commit -m "메시지"
 <br>
 
 
-- blockquote 태그 : 긴 인용문을 나타냄
+- `<blockquote>` : 긴 인용문을 나타냄
+```
+        <blockquote>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam nam laborum dolorum nostrum delectus cum natus consectetur ipsa, provident porro! Perferendis praesentium inventore modi ipsum rem quam enim voluptate soluta.
+            </p>
+        </blockquote>
+        <cite>--Me--</cite>
+```
 
-- cite 태그 : 저작물의 출처를 표기, 제목이 반드시 들어가야 함
+<br>
+
+- `<cite>` : 저작물의 출처를 표기, 제목이 반드시 들어가야 함
 
 ```
 <cite>— 어린왕자 여우의 말 중</cite>
 ```
+
+<br>
+
+- `<address>` : 연락처 정보를 작성하는 태그 / 물리적 주소나 URL, 이메일 주소, 전화번호 등등/  **이름을 반드시 포함 해야함**
+```
+  <p>My-tel: <address>010-****-****</address></p>  // 한 줄로 나오게 하는법 배워둘 것
+```
+<br>
+
+- `<mark>` : 하이라이트를 해주는 태그/ 색상은 CSS에서 background로 주면 됨.
+```
+
+```
+
+<br>
+
+- `<abbr>` : 약어(줄임말)를 나타내는 태그 / title: defintion
+```
+<abbr title="메소 획득량">메획</abbr>
+```
+
+<br>
+
+- `<dfn>` : 맥락에서 정의하는 용어를 감싸는 태그/ 보통은 a 태그와 함께 써서 용어에 대한 자세한 설명으로 링크시킴
+```
+<p>
+    <dfn id="maso">
+        <abbr title="메소 획득량">메획 : </abbr>
+    </dfn>
+    메소를 얻을 수 있는 양을 의미합니다.
+</p>
+```
+
+<br>
+
+- `<sup>` : 위에 표시되는 지수나 서수와 같은 첨자 표현하는 태그 / 위에 표시 되는 것
+
+```
+<p>Hunting <sup>3hr</sup></p> 
+```
+
+<br>
+
+- `<sub>` : text which goes under the main text / Lower one
+
+```
+<p>Lanking <sub>4th</sub> </p>
+```
+
+<br>
+
+- `<kbd>` : text describing KeyBoard's keys
+
+```
+<p><kbd>cntl</kbd> + <kbd>v</kbd> = Copy Things </p>
+```
+
+<br>
+
+------------
+
+
+## 5. Tags related to List(HTML)
+
+1. ol(ordered list ) : 
+
+
+
+
 
 
 
