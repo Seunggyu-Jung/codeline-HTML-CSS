@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li::before {
+            content: "[";
+        }
+
+        input {
+            color: royalblue;
+            width: 400px;
+        }
+
+        input ::placeholder{
+            color: red;
+        }
+
+        li::after {
+            content: "]";
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text", placeholder="아이디"> <br>
+    <input type="text", placeholder="아이디"> 
+    <ul>
+        <li>hi</li>
+        <li>hello</li>
+    </ul>
+    
+</body>
+</html>
