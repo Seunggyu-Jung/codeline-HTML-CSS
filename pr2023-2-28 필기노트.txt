@@ -1,0 +1,129 @@
+요약:
+URL, IP, PORT 개념 학습하고 익혀둘 것
+emmet 문법 cheat sheet + HTML 문법 cheat sheet 찾아서 공부할 것
+GitHub 개념 학습하기 => pull, push, add, commit
+
+
+확장자 : 실행시킬 소프트웨어를 연결시켜주는 것
+html cheat sheet 하나 찾아놓을것
+htmltagwrap : 단축키 alt + w
+
+#기초상식 중요:
+
+
+* 이력서에 이렇게 쓸 것
+GitHub
+JavaScript
+HTML
+1. IP: 주소
+*DNS : 국제 기구에서 운영
+*cafe24 : URL 주소를 삼
+*시놀로지: IP주소를 지급(유료)
+클라이언트 -> 공유기 -> 라우터 - > DNS(도메인 네임 서버) -> 라우터 -> 공유기 -> 클라이언트 -> 공유기 -> 각종 보안 및 네트워크 장비 -> 서버 -> DB -> 웹브라우저에 표시
+
+2. PORT : 문 
+
+http://paullab.synology.me:5000/ 에서 5000이 port(문)
+
+80번 -> http :웹페이지 전송
+443번 -> https :웹페이지 전송
+
+
+3. URL : 상호명
+
+
+
+4. 프론트엔드 개발자: UI /UX, 자바스크립트로 고급개발 + 서버 전송
+
+5. 퍼블리셔 : html /css 위주로 업무
+
+6. 정보 보호 전문자: fmf 
+
+7. 네트워크 엔지니어: 코딩과는 관계없음 
+
+8. 직군은 많으니 너무 프론트 엔드에 국한되지 말기
+
+
+# 깃허브 상식 : 인프런 강의 참고: https://inf.run/tTd6
+* 회사에서 gitlab을 쓸수 있음
+
+*GitHub 쓰는 이유 : 저장용량, 유지보수가 용이, 변경 내용이 저장
+--> 용량 , 협업, 관리
+
+. 누르면 에디터 열림
+
+*배포 URL 중요: setings -> pages -> branch -> main -> save
+
+* 인터넷에 깃허브랑 도메인 연결 익히기
+
+* 코드에 대한 설명을 작성하는 것이 중요함
+
+GitHub
+프로젝트 다운로드
+gti colne repo주소
+
+1. git pull: 코드 수정 <- 혼자하는 프로젝트에는 필요없음
+
+
+2. git commit -m'메세지' :
+
+
+3. git push:
+
+
+4. git add . : 
+
+# it기업 인턴 비추;;
+
+
+* ! + Tab : 자동완성
+
+* h1 + Tab : 자동완성
+
+* h1 { } : 자동완성
+
+* h$*6 : 6개 완성
+
+* # + Tab : id
+
+* .  + Tab : class
+
+* table>(tr>td*6)*4 + Tab : 테이블 자동생성
+
+* alt + 방향기 : 위 아래 교환
+
+* about:blank -> 빈 창 키는 법
+
+* ul>li*5 : ul리스트 생성
+
+* ol list
+
+* .one.two.three
+
+* lorem : 막말 생성기(치기만 하면 나옴)
+
+* lorem5 : 단어 5개
+
+* lorem*3 : 3개 문장
+
+*  .one : div 생성
+
+* a[href='https://www.naver']
+
+* p[a='one' b ='two' c='three']
+
+* shift + Del : 한 줄 삭제
+
+* ctrl + n : 파일 생성
+
+* https://docs.emmet.io/cheat-sheet/ : emmet 치트 시트
+
+* 마크업 문법은 괄호로 감싸고, 마크다운 문법은 그렇지 않음
+
+* git에서 붙여넣기 shift insert + 띄고 점 까지 작성
+
+* 얄팍한 코딩사전 : GitHub 
+
+# 프로그래머스 레벨 1
+
+- 정수 내림차순으로 배치하기 : .sort().reverse() : 반대로 뒤집기
