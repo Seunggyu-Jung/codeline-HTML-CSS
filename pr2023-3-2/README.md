@@ -269,7 +269,93 @@ $ git commit -m "메시지"
 
 ## 5. Tags related to List(HTML)
 
-1. ol(ordered list ) : 
+1. ol(ordered list ) : List which is ordered in Numbers, The order is important!
+
+- start : fix the strarting Number
+
+- reversed : reverse the ordered Numbers
+
+```
+<ol>
+        <p>How to make Soup</p>
+        <li>Boil 50ml water for 5min</li> 
+        <li>Put ingrediants in the pot</li>
+        <li>Boil for 30min</li>
+        <li>Add papper or other stuff for free</li>
+    </ol>
+
+    <ol start="4">  // starts with 4
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+
+
+    <ol reversed>  // reversed
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+```
+
+<br>
+
+- **BreadCrumbs : List which helping for find ordered Web Sites**
+
+<br>
+
+2. `<ul>` : Unordered List, Ordering with dots which are *Not* Numbers, Use it when the order isn't important
+
+```
+    <ul>  // ordered with dots
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+```
+
+<br>
+
+```
+    <ol type="I"> <!--Large Roman Numbering--> 
+        <li type="1">item</li>  <!--Default Number-->
+        <li type="i">item</li> <!--Small Roman Numbering-->
+        <li value="3">item</li>  <!--Tell the order in this line-->
+    </ol>
+```
+
+3. `<li>` : **Use for ol and ul's child Only**
+
+```
+<ol>
+	<div>item</div> // Can't Use
+	<li>item</li>
+	<li>item</li>
+</ol>
+```
+
+<br>
+
+4. `<dl>` : Definition list, Usally use in Dictionary
+
+```
+    <dl>
+        <dt>Slime</dt>  <!--Definition title-->
+        <dd>The Monsters which are sticky designed  <!--Defintion Detail--></dd>
+    </dl>
+```
+
+
+
+
+
+
+
 
 
 
