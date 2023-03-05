@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="001.css"> <!--rel: relations 관계. 대상 파일의 속성을 나타냄, href :  hyper-references 경로. 연결 시 참조할 파일의 위치를 나타냄  --> 
     <style> 
         
+         section {
+            color: salmon;
+         }
 
+         p {
+            color: inherit;
+         }
         
         
     </style> <!--HTML내에서 스타일에 영향을 줌-->
@@ -16,11 +22,12 @@
 </head>
 <body>   <!--HTML의 내용을 담당(각종 정보나 동작을 담고 있음)-->
 
-    <dl>
-        <dt>Slime</dt>
-        <dd>The Monsters which are sticky designed</dd>
-    </dl>
-    
+    <section>
+        부모요소
+        <p>
+            자식요소
+        </p>
+    </section>
     
     
 
