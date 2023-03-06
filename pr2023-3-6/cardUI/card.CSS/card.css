@@ -1,0 +1,51 @@
+
+.card-item {
+    width: 288px;
+    background: white;
+    box-shadow: 2px 2px 8px black;
+}
+
+.card-item a {
+    text-decoration: none;
+    color: #29363D;
+    display: block;
+    border-radius: 8px; /* a태그에 포커싱 해주기 위해 이 부분을 diplay 밑에 작성 */
+    overflow: hidden;
+}
+
+.card-item img {
+    width: 100%;
+    aspect-ratio: 288/196;  /* 이미지 비율 조정 */
+    object-fit: cover;  /* 화면 찌그러짐 보정 */
+    vertical-align: top;
+}
+
+.card-text {
+    padding: 24px 16px 16px;
+}
+
+.card-text .title {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text .title + p {
+    font-size: 12px;
+    color: #5a6a72;
+    overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        word-break: break-all;
+        margin: 12px 0 16px;
+        line-height: 20px;
+}
+
+.underline {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+    padding-left: 6px;
+}

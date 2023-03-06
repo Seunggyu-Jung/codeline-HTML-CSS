@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card UI</title>
+    <style>
+
+        .whole {
+            width: 300px;
+            height: 350px;
+            border-radius: 50px 50px 50px 50px;
+            background: salmon;
+            
+        }
+        
+        .box {
+            box-sizing: border-box;
+            width:300px;
+            aspect-ratio: 2 / 1;
+            object-fit:cover;
+        }
+
+        img{
+            width:300px;
+            aspect-ratio: 2 / 1;
+            object-fit:cover;
+        }
+
+        .key {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .value {
+            
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            width:100px;
+            aspect-ratio: 2 / 1;
+            object-fit:cover;
+            font-weight: lighter;
+            box-sizing: border-box;
+            font-size: 5px;
+        }
+
+        .read {
+            font-weight: bolder;
+            font-size: 15px;
+            text-align: left;
+            text-decoration: solid underline;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <img src="img/weniv-binky.png" alt="">
+
+    <div class="box">
+        <p class="key">그것을 피가 청춘을 것이다</p>
+        <p class="value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel excepturi voluptates maxime optio, impedit nihil a repudiandae consectetur soluta, labore quia. Fuga iste tempore ipsa alias nesciunt in suscipit?</p>
+        <p class="read">Read</p>
+    </div>        
+        
+
+    </div>
+</body>
+</html>

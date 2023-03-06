@@ -1,0 +1,72 @@
+
+
+.instar-item {
+    width: 288px;
+    height: 374px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.instar-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+div {
+    display: inline-block;
+}
+
+
+.instar-item .img1 {
+    width: 39.64px;
+    aspect-ratio: 39.64 / 59;
+    object-fit:cover;
+    padding: 10px;
+    position: absolute;
+}
+
+.first {
+    padding: px;
+    font-size: 16px;
+    text-align: right;
+    border: 10px;
+    padding: 0 10px 0 20px ;
+}
+
+.first + p {
+    font-size: 12px;
+    line-height: 14.4px;
+    position: absolute;
+}
+
+
+.instar-item .img2 {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+    vertical-align: bottom;
+    padding: 10px 0 0 0;
+}
+
+.instar-item .Text {
+    font-size: 12px;
+    font-weight: light;
+    overflow: hidden;
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        word-break: break-all;
+        margin: 0 0 16px;
+        padding: 5px 16px 16px;
+
+}
+
+.instar-item .under {
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 6px;
+    padding: 24px 16px 16px;
+}
