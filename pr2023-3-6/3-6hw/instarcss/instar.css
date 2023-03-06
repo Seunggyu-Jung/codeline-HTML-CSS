@@ -58,7 +58,6 @@ div {
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         word-break: break-all;
-        margin: 0 0 16px;
         padding: 5px 16px 16px;
 
 }
@@ -68,5 +67,10 @@ div {
     text-decoration: underline;
     font-weight: bold;
     padding-left: 6px;
-    padding: 24px 16px 16px;
+    padding: 24px 0 0 16px;
+}
+
+.arrow {
+    text-decoration: none;
+    border: 2px solid #29363D;
 }
