@@ -1,0 +1,84 @@
+
+.wrap {
+    width: 350px;
+    margin: auto;
+}
+
+
+
+.a11y-hidden {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+margin: -1px;
+width: 1px;
+height: 1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
+.login-item {
+    border: 1px solid #DBDBDB;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 18px 16px;
+}
+
+.login-item + p {
+    padding-left: 10px;
+}
+
+
+
+.title {
+    background: #711BFF;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 16px 0;
+}
+
+.title img {
+    height: 18px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.id a:last-child{
+    float: right;
+}
+
+
+.find-id{
+    background: url(../로그인/icon-lock.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 1em;
+    padding-left: 1.2em;
+}
+
+span {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #767676;
+    vertical-align: middle;
+    margin-bottom: 3px ;
+}
+
+.join {
+    background: url(../로그인/icon-user.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 1em;
+    padding-left: 1.2em;
+}

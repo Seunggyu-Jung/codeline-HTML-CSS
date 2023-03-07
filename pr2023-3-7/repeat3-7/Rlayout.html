@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rlayout</title>
+    <style>
+
+        
+        header {
+            height: 75px;
+            background: aqua;
+            border: 3px solid black;
+            box-sizing: border-box;
+        }
+
+        section {
+            background: rosybrown;
+            width: 50%;
+            height: 75px;
+            float: left;
+            border: 3px solid black;
+            box-sizing: border-box;
+            
+        }
+
+        aside {
+            background: green;
+            width: 50%;
+            height: 75px;
+            float: right;
+            border: 3px solid black;
+            box-sizing: border-box;
+        }
+
+        .lay::after {   /* 가상요소는 부모요소에 넣어야 함, 그리고 가상요소는 가상이기에 float가 들어간 자식요소의 부모에 넣고, 그 밑에있는 요소는 clear: left;를 붙인다. */
+            content: '';
+            display: block;
+        }
+
+        footer {
+            background: yellow;
+            border: 3px solid black;
+            height: 75px;
+            box-sizing: border-box;
+            /* clear: both;  float에 갇혀있었음*/
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    
+        <header>header</header>
+    <div class="lay">
+        <section>section</section>
+        <aside>aside</aside>
+    </div>
+        <footer>footer</footer>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+
+    <style>
+        header {
+            
+            height: 200px;
+            background: salmon;
+            text-align: center;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 50%;
+            height: 75px;
+            background: royalblue;
+            float: left;
+            text-align: center;
+            border: 5px solid gray;
+            box-sizing: border-box;  /*플로트는 1px도 용서하지 않음, 따라서 박스사이즈를 꼭 써야함*/
+        }
+
+        aside {
+            width: 50%;
+            height: 75px;
+            background: green;
+            float: right;
+            text-align: center;
+            border: 5px solid red;
+            box-sizing: border-box;
+        }
+
+        
+
+        footer{
+            overflow:hidden;  /* 이게 핵심  */
+            
+            background: yellow;
+            height: 75px;
+            text-align: center;
+            border: 5px solid purple;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>header</header>
+        <section> section</section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+    
+    
+</body>
+</html>
