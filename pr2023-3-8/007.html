@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-do</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            background: #eee;
+            grid-template-areas: 
+            "a a a b b"
+            "a a a b b"
+            "c c d b b"
+            "e e f f f"
+            "e e f f f";
+            gap: 10px;
+        }
+
+        .grid-item:first-child {
+            background: royalblue;
+            grid-area: a;
+        }
+
+        .grid-item:nth-child(2){
+            background: yellow;
+            grid-area: b;
+        }
+
+        .grid-item:nth-child(3) {
+            background: purple;
+            grid-area: c;
+        }
+        .grid-item:nth-child(4) {
+            background: orange;
+            grid-area: d;
+        }
+        .grid-item:nth-child(5) {
+            background: salmon;
+            grid-area: e;
+        }
+        .grid-item:last-child {
+            background: green;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>

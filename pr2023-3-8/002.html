@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            
+            background: #eee;
+            border: 2px solid #ddd;
+            margin-bottom: 10px;
+            height: 100px;
+            align-content: stretch;
+        }
+
+        .flex-item {
+            background: skyblue;
+            border: 3px solid royalblue;
+            width: 200px;
+            height: 50px;
+            flex-basis: 200px;
+            flex-shrink: 0;  /* 넘어가버림, 줄어들지 않게 함 */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container wrap">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+    </div>
+</body>
+</html>

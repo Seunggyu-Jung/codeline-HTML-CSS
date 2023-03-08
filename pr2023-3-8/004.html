@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat( 4, 1fr) ;
+        grid-template-rows: 2fr 1fr;
+        
+        gap: 20px 20px;
+    }
+
+
+    .grid-item:first-child {
+        grid-row-start: 1; /* 1 */
+    grid-row-end: 2; /* 3 */
+    grid-column-start: 1; /* 2 */
+    grid-column-end: 4; /* 4 */
+    background: salmon;
+    }
+
+    .grid-item:nth-child(2) {
+        grid-row-start: 2; /* 1 */
+    grid-row-end: 4; /* 3 */
+    grid-column-start: 2; /* 2 */
+    grid-column-end: 3; /* 4 */
+    background: yellow;
+    }
+
+
+    .grid-item {
+        background: skyblue;
+        border: 3px solid royalblue;
+    }
+
+    
+</style>
+<body>
+    <div class="grid-container"> <!-- 그리드의 가장 바깥영역 -->
+        <div class="grid-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta optio aspernatur nostrum laboriosam iusto doloremque debitis voluptate dicta, laudantium impedit adipisci hic temporibus? Veritatis, earum rem? Quidem itaque ipsam dolor.</div>   <!-- 그리드 셀 : 그리드의 한 칸 -->
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">f</div>
+    </div> 
+</body>
+</html>
