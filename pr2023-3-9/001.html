@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+
+
+        :root {
+            --max-width: 1000px;
+            --plane-padding: 30px;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-size: clamp(20px, 2vw, 60px);
+        }
+
+        .wrap {
+            background: royalblue;
+            width: 1400px;
+            height:  100px;
+            margin:auto;
+            /* max-width: calc(100% - var(--plane-padding)); */
+            width: max(var(--max-width), calc(100% - var(--plane-padding) *2) );
+        }
+
+        /* ul reset */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* float 방법 */
+        .float {
+            overflow: hidden;
+        }
+
+        .float li {
+            float: left;
+            background: gold;
+            width:calc((70% - (24px * 2)) / 3);
+        }
+
+        .float li:not(:first-child){
+            margin-left:24px;
+        } /* gap 개념 */
+
+        /* flex 방법  */
+        .flex {
+            display: flex;
+            gap: 24px;
+            
+        }
+
+        .flex li {
+            background: gold;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        content
+    </div>
+    <ul class="float">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <ul class="flex">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rgrid-do</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 2fr 1fr 2fr;
+            width: 500px;
+            height: 500px;
+
+        }
+
+        .grid-item:first-child {
+            background: royalblue;
+            grid-area: 1/1/2/3;
+        }
+
+        .grid-item:nth-child(2) {
+            background: yellow;
+            grid-area: 1/3/3/4;
+        }
+
+        .grid-item:nth-child(3) {
+            background: purple;
+            grid-area: 2/1/3/2;
+        }
+
+        .grid-item:nth-child(4) {
+            background: orange;
+        }
+
+        .grid-item:nth-child(5) {
+            background: salmon;
+        }
+
+        .grid-item:last-child {
+            background: green;
+            grid-area: 3/2/4/4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+
+    </div>
+</body>
+</html>

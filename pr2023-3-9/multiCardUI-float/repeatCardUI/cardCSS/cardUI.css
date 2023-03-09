@@ -1,0 +1,105 @@
+
+.container {
+    width: min(1224px, 100%-60px);
+    margin: auto;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* .container article:nth-child(4n-3){
+    margin-left: 0;
+} */
+
+
+.container article {
+    float: left;
+    width: calc(100%-(24px * 3)/4);
+    margin: 0 0 32px 24px;
+}
+
+.card-tem {
+    width: 288px;
+    background: white;
+    box-shadow: 2px 2px 8px black;
+}
+
+
+.card-tem a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 288 / 196;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+
+.card-tex {
+    padding: 24px 16px 16px;
+}
+
+.card-tex .title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-tex .read {
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+.card-tex .text {
+    font-weight: light;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        word-break: break-all;
+        margin: 12px 0 16px;
+        line-height: 17px;
+}
+
+@media (min-width: 1025px) {
+    .container article:nth-child(4n-3) {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .container article {
+      width: calc((100% - (24px * 2)) / 3);
+    }
+    .container article:nth-child(3n-2) {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 640px) {
+    .container article {
+      width: calc((100% - 24px) / 2);
+    }
+    .container article:nth-child(2n-1) {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .container article {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+

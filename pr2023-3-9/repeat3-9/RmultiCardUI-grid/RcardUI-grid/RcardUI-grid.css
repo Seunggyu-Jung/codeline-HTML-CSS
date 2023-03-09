@@ -1,0 +1,81 @@
+
+
+.a11y-hidden {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+margin: -1px;
+width: 1px;
+height: 1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
+
+/* grid로 풀기 */
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 288px);
+    gap: 32px 24px;
+    width: min(1224px, calc(100% - 60px));
+    margin: auto;
+    
+} */
+
+
+/* flex로 풀기 */
+/* .container {
+    display: flex;
+    flex-flow: row wrap;
+    width: min(1224px, calc(100% - 60px));
+    margin: auto;
+    gap: 32px 24px;
+} */
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    border-radius: 8px; /* a태그에 포커싱 해주기 위해 이 부분을 diplay 밑에 작성 */
+    overflow: hidden;
+    
+}
+
+.art {
+    background: #eee;
+    width: 288px;
+    height: 348px;
+    box-shadow: 2px 2px 8px black;
+    float: left;
+    margin: 32px 24px;
+    
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 10px 25px 0 5px;
+}
+
+.content {
+    font-size: 12px;
+    font-weight: light;
+      overflow:hidden;  
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    margin: 10px;
+
+}
+
+.read {
+    margin-left: 10px;
+    text-decoration: underline;
+}
