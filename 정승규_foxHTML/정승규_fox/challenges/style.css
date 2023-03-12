@@ -1,0 +1,39 @@
+body {
+    background-image: url(../challenges/images/bg.png);
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 50px;
+}
+
+div {
+    height: 350px;
+}
+
+div .fox{
+    display: block;
+    margin: auto;
+}
+
+div .green {
+    display: block;
+    margin: auto;
+}
+
+div .text {
+    width: 270px;
+    height: auto;
+    background: #93572E;
+    border: 1px solid #93572E;
+    border-radius: 0 0 50px 50px;
+    margin: auto;
+    padding: 0 15px 5px;
+    color: #eee;
+}
+
+
+
+/* footer{
+    background: green;
+} */
