@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        .two {
+            background: gray;
+        }
+
+        [class^="btn"] {
+            width: 88px;
+            height: 32px;
+            background: #343F50;
+            color: #eee;
+            margin-top: 10px;
+            margin-left: 22px;
+            margin-bottom: 10px;
+            box-shadow: inset 1px 1px #4a5568;
+            border: 1px solid #1a202c;
+        }
+
+        
+        .btn-positive:hover {
+            transition: all linear 3s -0.3s;  /* 이렇게 해야 콘솔창에서 조작 가능 */  /* 딜레이는 뒤에 씀 */
+            background-color: royalblue;
+            text-decoration: underline;
+            
+        }
+
+        .btn-negative:active {
+            box-shadow: inset 1px 1px #262f3e;
+            text-decoration: underline;
+            color: white;
+            
+        }
+        
+        .btn:disabled {
+            background: black;
+            box-shadow: none;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="one">
+        default
+        <button class="btn" type="button">button</button>
+    </section>
+        
+    <section class="two">
+        hover
+        <button class="btn-positive" type="button">button</button>
+    </section>
+
+    <section class="one">
+        active
+        <button class="btn-negative" type="button" >button</button>
+    </section>
+
+    <section class="two">
+        disabled
+        <button class="btn" type="button" disabled>button</button>
+    </section>
+</body>
+</html>
