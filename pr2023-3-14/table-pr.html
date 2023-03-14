@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-pr</title>
+    <style>
+        table {
+            width: 100%;
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 4px 16px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        caption {
+            caption-side: bottom;
+            margin-top: 20px;
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+
+        .col-width {
+            width: 10%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>2023학년도 대학수학능력시험 성적통지표</caption>
+        <colgroup>
+            <col class="col-first">
+            <col span="7" class="col-width">
+        </colgroup>
+        <thead>
+            <tr>
+            <th id="col1">구분</th>
+            <th id="col2"  rowspan="2">한국사 영역</th>
+            <th id="col3" >국어 영역</th>
+            <th id="col4" >수학 영역</th>
+            <th id="col5" rowspan="2">영어 영역</th>
+            <th id="col6" colspan="2">탐구 영역</th>
+            <!-- <th>탐구 영역</th> -->
+            <th id="col7" >제 2 외국어 <br> / 한문 영역</th>
+            </tr>
+
+            <tr>
+            <th id="col11">선택과목</th>
+            <!-- <th>한국사 영역</th> -->
+            <th id="col31">화법과 작문</th>
+            <th id="col41">확률과 통계</th>
+            <!-- <th>영어 영역</th> -->
+            <th id="col61">생활과 윤리</th>
+            <th id="col62">지구과학1</th>
+            <th id="col71">독일어</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <th id="row1">표준점수</th>
+                <td headers="col2 row1" rowspan="2">&nbsp;</td>
+                <td headers="col3 col31 row1">131</td>
+                <td headers="col4 col41 row1">137</td>
+                <td headers="col5 row1"rowspan="2">&nbsp;</td>
+                <td headers="col6 col61 row1">53</td>
+                <td headers="col6 col62 row1">64</td>
+                <td headers="col7 col71 row1" rowspan="2">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <th id="row2">백분위</th>
+                <!-- <td>&nbsp;</td> -->
+                <td>93</td>
+                <td>95</td>
+                <!-- <td>&nbsp;</td> -->
+                <td>75</td>
+                <td>93</td>
+                <!-- <td>&nbsp;</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            
+                <th>등급</th>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
