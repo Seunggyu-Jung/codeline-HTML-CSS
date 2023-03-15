@@ -1,0 +1,48 @@
+/* Resets */
+
+h1, p {
+    margin: initial;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Layouts */
+.wrapper {
+    width: 300px;
+    margin: 100px auto;
+}
+
+/* Components */
+
+
+body {
+    background-image: url(./challenges/images/bg.png);
+}
+
+.card-cover {
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+.card-contents {
+    border-radius: 10px 10px 30px 30px;
+    background-color: brown;
+    color: white;
+    background-color: #93572e;
+    background-image: url(./challenges/images/green.png);
+    background-repeat: repeat-x;
+    padding: 64px 20px 40px 20px;
+    border-bottom: 10px solid #4a260b;
+}
+
+.card-contents h1 {
+    margin-bottom: 10px;
+}
+
+.card-contents p {
+    margin-bottom: 1.4em;
+}
