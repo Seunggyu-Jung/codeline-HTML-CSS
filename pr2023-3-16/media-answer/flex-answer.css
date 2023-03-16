@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+}
+
+.container .section-text {
+    flex-grow: 1;
+}
+
+
+
+@media (min-width: 1200px) {
+    .container .container2 {
+        flex-basis: 486px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+.container {
+    width: 1200px;
+    max-width: calc(100% - 60px);
+    min-width: 400px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container2 {
+        flex-direction: row;
+    }
+
+    .container2 .link1,
+    .container2 .link2 {
+        flex-grow: 1;  /* 쓸 수 있는 공간을 전체로 차지 */
+        flex-basis: 0;   /* 같은 비율로 나누기 */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+}
+
+
+
+.section-text h1 {
+    color: #121314;
+    font-weight: normal;
+    font-size: 70px;
+
+}
+
+.section-text p {
+    color: #47494D;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.link1,
+.link2 {
+    border-radius: 20px;
+    color: white;
+    padding: 40px 30px 30px 40px;
+    aspect-ratio: 486 / 280;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link1 {
+    background: url(./grid/background1.jpg) no-repeat 0 0 / cover;  /* 반복 위치 / 넣는법 */
+}
+
+.link2 {
+    background: url(./grid/background2.jpg) no-repeat 0 0 / cover;
+}
+
+
+.link1 strong,
+.link2 strong {
+    font-size: 30px;
+}
+
+.link1 span,
+.link2 span {
+    align-self: flex-end;
+}
+
+
+.go-after::after {  /* 가상요소로 해결하기 */
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    margin-left: 0.2em;
+    border-radius: 0.1em;
+}
+
+
+.go-bg {    /* 배경으로 해결하기 */
+    background: url(./grid/arrow.svg) no-repeat 100% center;
+    padding-right: 1.2em;
+}
+
+
+@media (max-width: 1200px) {
+    .section-text p {
+      /* 변동값 20 18 14 */
+      font-size: 18px;
+    }
+    .link1,
+    .link2 {
+      /* 변동값 
+          40px 30px 30px 40px
+          30px 20px 20px 30px
+          30px 20px 20px 30px
+       */
+      padding: 30px 20px 20px 30px;
+    }
+  
+    .link1 strong,
+    .link2 strong {
+      /* 변동값 30 24 20 */
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 768px) {
+    .section-text h1 {
+      /* 변동값 70 70 36 */
+      font-size: 36px;
+    }
+    .section-text p {
+      /* 변동값 20 18 14 */
+      font-size: 14px;
+  
+      /* 변동값 20 20 14 */
+      margin-top: 14px;
+    }
+    .link1 strong,
+    .link2 strong {
+      /* 변동값 30 24 20 */
+      font-size: 20px;
+    }
+  }
