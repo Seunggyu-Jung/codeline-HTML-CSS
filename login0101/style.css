@@ -1,7 +1,16 @@
+body,
+p,
+h1,
+h2,
+section,
+button {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 520px;
     margin: auto;
-    padding: 0;
 }
 
 button {
@@ -23,6 +32,8 @@ section {
     padding: 0 24px;
 }
 
+
+
 header {
     display: flex;
     border-bottom: 1px solid #C4C4C4;
@@ -43,9 +54,10 @@ header {
 }
 
 
-.write {
-    display: flex;
-    flex-direction: column;
+
+
+main p {
+    margin-bottom: 24px;
 }
 
 .iden {
