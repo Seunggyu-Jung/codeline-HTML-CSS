@@ -85,3 +85,7 @@ main p {
     justify-content: space-around;
     align-items: center;
 }
+
+.enter::after {
+    content: "";
+}
