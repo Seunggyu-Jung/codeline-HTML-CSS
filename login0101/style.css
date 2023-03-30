@@ -1,0 +1,91 @@
+body,
+p,
+h1,
+h2,
+section,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 520px;
+    margin: auto;
+}
+
+button {
+    border: 0;
+}
+
+.a11y-hidden {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+margin: -1px;
+width: 1px;
+height: 1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
+section {
+    padding: 0 24px;
+}
+
+
+
+header {
+    display: flex;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+    flex-grow: 1;
+    margin: 20px 0 18px;
+}
+
+.close {
+    width: 16px;
+    height: 16px;
+    background:url(./close.png) no-repeat center / 1em;
+    margin-top: 22px;
+}
+
+
+
+
+main p {
+    margin-bottom: 24px;
+}
+
+.iden {
+    border: 2px solid #F4492E;
+}
+
+.warnning {
+    color: #F4492E;
+    font-size: 14px;
+}
+
+
+.enter {
+    display: block;
+    width: 472px;
+    margin: auto;
+    background: #2F80ED;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 14px;
+}
+
+.find {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enter::after {
+    content: "";
+}

@@ -1,0 +1,68 @@
+h2,
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.notice-wrap {
+    width: 728px;
+}
+
+.notice-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 9px 22px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.more {
+    background: url(./Icons/Action/add.png) no-repeat center / 1em;
+    margin: 0;
+}
+
+
+
+.notice-list{
+    display: flex;
+    height: 56px;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 16px;
+    align-items: center;
+}
+
+.notice-list button {
+    flex-grow: 1;
+    text-align: start;
+}
+
+.notice-list strong {
+    color: #2E6FF2;
+    padding-right: 16px;
+}
+
+.notice-list p {
+    color: #29363D;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.date {
+    text-align: end;
+    margin: 0;
+    font-size: 16px;
+    color: #29363D;
+}

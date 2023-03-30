@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* @media screen and (min-width:620px) {
+            img {
+                width: 200px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <!-- <img srcset="images/rabbit_300.png 2x, images/rabbit_500.png 3x" src="images/images/rabbit_150.png" alt=""> -->
+
+    <!-- <img
+        srcset="images/images/rabbit_500.png 700w,
+        images/images/rabbit_300.png 600w,
+        images/images/rabbit_150.png 300w"
+                    src="images/images/rabbit_150.png"
+                            alt="test"> -->
+
+
+                            <!-- <img
+                            srcset="images/images/rabbit_500.png 500w,
+                            images/images/peng.png 300w,
+                                images/images/rabbit_150.png 150w"
+                            sizes="(min-width: 960px) 250px,
+                                        (min-width: 620px) 150px,
+                                        300px"
+                            src="images/images/rabbit_150.png"
+                            alt="test"> -->
+
+                            <picture>
+                                <source srcset="images/images/rabbit_500.png" media="(min-width:960px)">
+                                <source srcset="images/images/rabbit_300.png" media="(min-width:620px)">
+                                <img src="images/images/rabbit_150.png" alt="귀여운 아기 팽귄들">
+                            </picture>
+
+</body>
+</html>
